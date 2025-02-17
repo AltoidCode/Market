@@ -55,7 +55,7 @@ export const LoginPage: React.FC = () => {
   const checkLoginStatus = () => {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     if (isLoggedIn) {
-      navigate('/market');
+      navigate('/Home');
     }
   };
 

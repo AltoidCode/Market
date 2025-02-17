@@ -48,8 +48,8 @@ export const ErrorPage = () => {
 
   return (
     <StyledPaper elevation={3}>
-      <Typography variant="h5" sx={{ color: '#ffffff', marginBottom: '20px', height:'150px' }}>
-        You are not signed in, you need to log in or register
+      <Typography variant="h5" sx={{ color: '#ffffff', marginBottom: '20px', height:'30px' }}>
+        You have gone astray
       </Typography>
       <WhiteButton variant="contained" fullWidth onClick={() => navigate('/home')}>
         Click here to return to home
