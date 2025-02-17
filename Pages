@@ -1,0 +1,9 @@
+User Authentication (login, registration, password reset).
+Real-Time Chat (using Phoenix Channels).
+Product Listings (CRUD operations for products, categories).
+Order/Transaction Management (users buying/selling items).
+Search (using Ecto to query product data).
+Notifications (real-time updates for new messages, orders, etc.).
+Admin Panel (for managing users, listings, and transactions).
+
+BACKEND Elixir
