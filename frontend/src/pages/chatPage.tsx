@@ -15,7 +15,7 @@ const WhiteButton = styled(Button)({
   },
 });
 
-const ChatApp = () => {
+export const ChatApp = () => {
   const [messages, setMessages] = useState<string[]>([]);  // List of chat messages
   const [message, setMessage] = useState('');  // Current message being typed
   const [ws, setWs] = useState<WebSocket | null>(null);  // WebSocket connection
@@ -111,5 +111,3 @@ const ChatApp = () => {
     </div>
   );
 };
-
-export default ChatApp;

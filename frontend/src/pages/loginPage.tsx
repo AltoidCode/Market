@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import styled from '@emotion/styled';
 import { Box, Button, Paper, TextField, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
@@ -58,20 +58,24 @@ export const LoginPage: React.FC = () => {
       navigate('/Home');
     }
   };
-
+  // Function to check if user has admin role
+  const checkAdminRole = () => {
+    const role = localStorage.getItem('role');
+    if (role === 'admin') {
+      navigate('/dashboard');
+    }
+  };
   // Use effect to check login status on component mount
   useEffect(() => {
     checkLoginStatus();
   }, []);
 
-  // Handle form submission
   const handleLogin = () => {
     // Basic check for Admin credentials
     if (username === 'Admin' && password === 'Password') {
-      // Set login status in local storage
       localStorage.setItem('isLoggedIn', 'true');
-      // Redirect to dashboard if valid
-      navigate('/dashboard');
+      localStorage.setItem('role', 'admin')
+      navigate('/Home');
     } else if (username === 'User' && password === 'UserPassword') {
       // Basic check for User credentials
       localStorage.setItem('isLoggedIn', 'true');

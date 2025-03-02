@@ -1,0 +1,17 @@
+--- Front end ---
+
+React (typescript for strong typing)
+Redux Toolkit (Advanced state management)
+React Query (Fetching, caching and syncing data in React)
+React Router (Modern routing)
+Material Ui (for better looking stuff)
+Framer Motion (For animations)
+
+--- Back End ---
+
+Gin (High performance web framework for routing and middleware handling)
+Gorm (For interacting with relation databases)
+Go-Routine (To manage concurrency and handle multiple requests)
+Go-Bitcoin (For handling bitcoin transactions)
+Go-Crypto (Cryptography library)
+Gorilla (For managing websocket connections)

@@ -9,8 +9,11 @@ import { RegisterPage } from './pages/registerPage';
 import { ErrorPage } from './pages/404';
 import { Dashboard } from './pages/dashboard';
 import { HomeRegistering } from './pages/homeRegistering';
-import ChatApp from './pages/chatPage';
+import { ChatApp } from './pages/chatPage';
 import { SettingsPage } from './pages/settingsPage';
+import { Listings } from './pages/admin/Listings';
+import { Transactions } from './pages/admin/Transactions';
+import { Analytics } from './pages/admin/Analytics';
 
 function App() {
   return (
@@ -29,6 +32,10 @@ function App() {
               <Route path="/Dashboard" element={<Dashboard />} />
               <Route path="/Chatroom" element={<ChatApp />} />
               <Route path="/Settings" element={<SettingsPage />} />
+              <Route path="/Listings" element={<Listings />} />
+              <Route path="/Transactions" element={<Transactions />} />
+              <Route path="/Users" element={<Transactions />} />
+              <Route path="/Analytics" element={<Analytics />} />
             </Routes>
           </header>
         </Container>
